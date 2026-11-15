@@ -1,7 +1,7 @@
-// Replace these placeholders with real links.
+// Replace the placeholder links (Messenger, Instagram) with real ones.
 const LINKS = {
-  whatsapp: 'https://wa.me/',
-  store: '#buy',
+  messenger: 'https://m.me/', // TODO: use the TBunny page username, e.g. https://m.me/<page>
+  noon: 'https://www.noon.com/egypt-en/tbunny-kids-shampoo-3-in-1-tear-free-sulfate-free-shampoo-conditioner-and-shower-gel-400ml/Z27B190BBF1A944F401A0Z/p/?o=ce8063a225ae7c9a',
   instagram: 'https://instagram.com/',
 };
 
