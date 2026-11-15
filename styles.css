@@ -151,3 +151,13 @@ details p{margin-top:.7rem;color:var(--muted)}
 @keyframes rise{to{transform:translateY(-110vh)}}
 @keyframes morph{50%{border-radius:42% 58% 45% 55%/55% 45% 55% 45%}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+.hero__in>*,.ing>*,.prod>*,.buy__in>*{min-width:0}
+.prod__imgs img{min-width:0}
+
+/* Sticky mobile buy bar */
+.sticky{position:fixed;inset-inline:0;bottom:0;z-index:30;display:flex;gap:.6rem;padding:.7rem 4%;background:#ffffffee;backdrop-filter:blur(10px);box-shadow:0 -6px 20px #3f356622;transform:translateY(110%);transition:transform .3s}
+.sticky.show{transform:none}
+.sticky .btn{flex:1;text-align:center;padding:.7rem .5rem;font-size:.95rem;box-shadow:none}
+@media(min-width:860px){.sticky{display:none}}
+@media(max-width:859px){body{padding-bottom:4.5rem}}

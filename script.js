@@ -28,3 +28,13 @@ const io = new IntersectionObserver(es => es.forEach(e => {
   if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
 }), { threshold: .15 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Show the sticky buy bar after the hero, hide it at the Buy section
+const bar = document.getElementById('sticky');
+const hero = document.querySelector('.hero'), buy = document.getElementById('buy');
+const vis = { hero: true, buy: false };
+const barIO = new IntersectionObserver(es => {
+  es.forEach(e => { vis[e.target === hero ? 'hero' : 'buy'] = e.isIntersecting; });
+  bar.classList.toggle('show', !vis.hero && !vis.buy);
+});
+barIO.observe(hero); barIO.observe(buy);
