@@ -1,8 +1,8 @@
-// Replace the placeholder links (Messenger, Instagram) with real ones.
+// Buy and social links.
 const LINKS = {
-  messenger: 'https://m.me/', // TODO: use the TBunny page username, e.g. https://m.me/<page>
-  noon: 'https://www.noon.com/egypt-en/tbunny-kids-shampoo-3-in-1-tear-free-sulfate-free-shampoo-conditioner-and-shower-gel-400ml/Z27B190BBF1A944F401A0Z/p/?o=ce8063a225ae7c9a',
-  instagram: 'https://instagram.com/',
+  messenger: 'https://m.me/61590377429830',
+  noon: 'https://www.noon.com/egypt-en/tbunny-kids-shampoo-3-in-1-tear-free-sulfate-free-shampoo-conditioner-and-shower-gel-400ml/Z27B190BBF1A944F401A0Z/p/',
+  instagram: 'https://www.instagram.com/tbunny.eg/',
 };
 
 document.querySelectorAll('[data-buy]').forEach(a => { a.href = LINKS[a.dataset.buy]; });
